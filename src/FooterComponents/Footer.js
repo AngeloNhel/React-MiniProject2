@@ -34,10 +34,10 @@ function Footer () {
               <hr/>
               <div className="row">
                 <div className="col-sm">
-                  <div className="linkLogos"><img src="twitter.png" alt="Twitter Logo" href="#"/></div>
-                  <div className="linkLogos"><img src="facebook.png" alt="Facebook Logo" href="#"/></div>
-                  <div className="linkLogos"><img src="youtube.png" alt="Youtube Logo" href="#"/></div>
-                  <div className="linkLogos"><img src="instagram.png" alt="Instagram Logo" href="#"/></div>
+                  <div className="linkLogos"><img src="/Assets/twitter.png" alt="Twitter Logo" href="#"/></div>
+                  <div className="linkLogos"><img src="/Assets/facebook.png" alt="Facebook Logo" href="#"/></div>
+                  <div className="linkLogos"><img src="/Assets/youtube.png" alt="Youtube Logo" href="#"/></div>
+                  <div className="linkLogos"><img src="/Assets/instagram.png" alt="Instagram Logo" href="#"/></div>
                 </div>
               </div>
               <div className="row">

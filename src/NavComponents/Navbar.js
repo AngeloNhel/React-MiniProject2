@@ -17,7 +17,7 @@ function AppNavbar() {
         <Navbar  expand="lg" fixed="top" className="navBackgroundColor">
             <Container fluid>
               <Navbar.Brand as={Link} to='/'><img
-                    src="/coffeeLogo.png"
+                    src="/Assets/coffeeLogo.png"
                     width="70"
                     className="d-inline-block align-top"
                     alt="React Bootstrap logo"
