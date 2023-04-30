@@ -1,0 +1,52 @@
+.backgroundColor {
+    background-color: aliceblue !important;
+    
+}
+.row {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#webfooter {
+    background-color: rgb(231, 231, 231);
+}
+#aboutUs {
+    font-weight: bolder;
+    font-size: x-large;
+}
+#orderOnline {
+    font-weight: bolder;
+    font-size: x-large;
+}
+.linkItems {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+    
+}
+.linkItems:hover {
+    color: rgb(41, 41, 41) !important;
+}
+.sb-logo-text {
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    width: auto;
+    z-index: 10;
+    margin-top: 6rem;
+    text-align: right;
+    display: inline-block;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+}
+
+.linkLogos {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
