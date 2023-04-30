@@ -1,13 +1,10 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Menu from './Menu';
-import Merchandise from './Merchandise';
-import Rewards from './Rewards';
-import Home from './Home';
+
 
 
 function AppNavbar() {
@@ -16,7 +13,7 @@ function AppNavbar() {
 
   return (
     
-    <BrowserRouter>
+   
         <Navbar  expand="lg" fixed="top" className="navBackgroundColor">
             <Container fluid>
               <Navbar.Brand as={Link} to='/'><img
@@ -37,13 +34,7 @@ function AppNavbar() {
               </Navbar.Collapse>
             </Container>
         </Navbar>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/Menu" element={<Menu/>} />
-          <Route path="/Merchandise" element={<Merchandise/>} />
-          <Route path="/Rewards" element={<Rewards/>} />
-        </Routes>
-    </BrowserRouter>
+        
   );
 }
 
