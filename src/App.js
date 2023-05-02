@@ -20,6 +20,7 @@ import PrivacyPolicy from './FooterComponents/PrivacyPolicy';
 import TermofUse from './FooterComponents/termofUse';
 import SiteMap from './FooterComponents/SiteMap';
 import CookiesPreferences from './FooterComponents/CookiesPreferences';
+import JoinNow from './NavComponents/JoinNow';
 
 
 
@@ -47,7 +48,8 @@ function App() {
           <Route path="/termofUse" element={<TermofUse/>}/>
           <Route path="/SiteMap" element={<SiteMap/>}/>
           <Route path="/CookiesPreferences" element={<CookiesPreferences/>}/>
-
+          <Route path="/JoinNow" element={<JoinNow/>}/>
+          
       </Routes>
     <Footer/>  
   </BrowserRouter>

@@ -1,0 +1,34 @@
+
+.joinNowRow {
+    margin-top: 90px;
+}
+.joinNowCon {
+    background-color: beige;
+}
+.joinNowButton {
+    background-color: beige !important;
+    border: 1px solid rgb(204, 204, 184);
+    color: rgb(73, 73, 73);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.joinNowButton:hover {
+    background-color: rgb(245, 245, 156) !important;
+    color: black !important;
+}
+.joinNowImageAndPlacehoder {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.card-title {
+    font-size:xx-large;
+    font-weight: bold;
+}
+.joinNowPlaceholer {
+    font-weight: bold;
+    color: rgb(129, 102, 66);
+    font-size: small;
+}
+.link-opacity-75:hover {
+    cursor: pointer;
+}
