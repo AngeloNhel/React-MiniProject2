@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import axios from "axios";
 import './Navbar.css';
 import './JoinNow.css';
 import Button from 'react-bootstrap/Button';
@@ -11,6 +13,23 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function AppNavbar() {
 
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+   
+  
+    const handleSubmit = async (event) => {
+      event.preventDefault();
+      const response = await axios.post("http://localhost:9000/userslogin/login", {
+        email,
+        password,
+      });
+      if (response.data.success) {
+        alert("successfuly login")
+      } else {
+        alert("Invalid credentials. Please try again.");
+      }
+    };
+    
   
 
   return (
@@ -32,14 +51,14 @@ function AppNavbar() {
                   <Nav.Link as={Link} to='/Rewards'>REWARDS</Nav.Link>
                   <Nav.Link data-bs-toggle="modal" data-bs-target="#shoppingCartModal">SHOPPING CART</Nav.Link>
                 </Nav>
-                <Button className='navSigninButtonStyle' data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</Button>
+                <Button className='navSigninButtonStyle' data-bs-toggle="modal" data-bs-target="#loginModal">Sign in</Button>
                 <Button className='navJoinNowButtonStyle'  as={Link} to='/JoinNow'>Join Now</Button>
               </Navbar.Collapse>
             </Container>
         </Navbar>
 
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                 <div class="modal-body">
@@ -47,14 +66,25 @@ function AppNavbar() {
                         <div className="card">
                             <div className="card-body">
                                 <div className="card-title" style={{"textAlign" : "center"}}>Sign in</div>
-                                <div>    
-                                    <label>Email:  </label>
-                                    <input type="email" className="form-control"/>
-                                </div>
-                                <div>
-                                    <label>Password: </label>
-                                    <input type="password" className="form-control"/>
-                                </div>                
+                                    <form onSubmit={handleSubmit}>    
+                                        <div>    
+                                            <label>Email:  </label>
+                                            <input 
+                                            type="email" 
+                                            className="form-control"
+                                            onChange={(event) => setEmail(event.target.value)}
+                                            />
+                                        </div>
+                                        <div>
+                                            <label>Password: </label>
+                                            <input 
+                                            type="password" 
+                                            className="form-control"
+                                            onChange={(event) => setPassword(event.target.value)}
+                                            />
+                                            <button type="submit" class="btn btn-primary joinNowButton" >Sign in</button>
+                                        </div>    
+                                    </form>            
                                 <div>
                                     <Nav.Link className='JoinLink' as={Link} to='/JoinNow'> <label>Already have an account? </label> Join now</Nav.Link>
                                 </div>
@@ -64,7 +94,6 @@ function AppNavbar() {
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary joinNowButton" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary joinNowButton" >Sign in</button>
                 </div>
                 </div>
             </div>

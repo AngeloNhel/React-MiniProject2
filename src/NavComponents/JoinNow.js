@@ -14,7 +14,7 @@ function JoinNow () {
       event.preventDefault();
       const newUsers =  { firstName, lastName, email, password };
       try {
-         await axios.post('http://localhost:9000/userslogin',newUsers);
+         await axios.post('http://localhost:9000/userslogin/JoinNow',newUsers);
         alert('Registration successful');
       } catch (error) {
         alert('Registration failed');
