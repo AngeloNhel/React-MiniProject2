@@ -3,12 +3,14 @@ import './Home.css';
 
 
 function Home () {
-
+      
     return (
         
-          
+         
+
            <div className="container-fluid">
             <div className="container">
+           
                 <div className="row align-items-center rowStyle"> 
                     <div className="col-md ">
                         <div className="padding">
