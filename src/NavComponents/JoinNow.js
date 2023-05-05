@@ -1,6 +1,5 @@
 import React, {useState } from "react";
 import './JoinNow.css';
-import Nav from 'react-bootstrap/Nav';
 import axios from 'axios';
 
 function JoinNow () {
@@ -79,10 +78,6 @@ function JoinNow () {
                                     <button className="btn joinNowButton">Create New</button>
                                 </div>
                                 </form>
-                                <div>
-                                <Nav.Link className='JoinLink' data-bs-toggle="modal" data-bs-target="#exampleModal"> <label>Already have an account? </label> Sign in</Nav.Link>
-                                  
-                                </div>
                             </div>
                         </div>
                         </div>
