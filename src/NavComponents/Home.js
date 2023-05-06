@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import React from "react";
+import Button from 'react-bootstrap/Button';
 import './Home.css';
 
 
@@ -16,7 +18,7 @@ function Home () {
                         <div className="padding">
                             <div><h1 className="h1">Cups of appreciation</h1></div>
                             <div className="paragraph">This Administrative Professionals’ Day, express your thanks with a well-deserved Café la crème Card.</div>
-                            <div><button className="btn">Send an Gift</button></div>
+                            <div><Button className='btn eGiftButton'  as={Link} to='/Rewards'>Send e Gift</Button></div>
                         </div>                        
                     </div>
                     <div className="col-md secondColBackgroundColor">
@@ -31,7 +33,7 @@ function Home () {
                         <div className="padding">
                             <div><h1 className="h1">Spring in your step, Rewards in your cup</h1></div>
                             <div className="paragraph">Shake up your usual and start earning Rewards —join today!</div>
-                            <div><button className="btn sectionTwoButton">Join now</button></div>
+                            <div><Button className='btn sectionTwoButton'  as={Link} to='/JoinNow'>Join Now</Button></div>
                         </div>                        
                     </div>
                     <div className="col-md">
@@ -46,7 +48,8 @@ function Home () {
                         <div className="padding">
                             <div><h1 className="h1">Find your sunny side</h1></div>
                             <div className="paragraph">The Paradise Drink Café la crème Refreshers® beverage shines with pineapple and passionfruit flavors.</div>
-                            <div><button className="btn sectionThreeButton">Order now</button></div>
+                         
+                            <div><Button className='btn sectionThreeButton'  as={Link} to='/Menu'>Order Now</Button></div>
                         </div>                        
                     </div>
                     <div className="col-md">
@@ -61,7 +64,7 @@ function Home () {
                         <div className="padding">
                             <div><h1 className="h1">Nitro your way</h1></div>
                             <div className="paragraph">Try the new Cinnamon Caramel Cream Nitro Cold Brew or go for the Vanilla Sweet Cream Nitro Cold Brew.</div>
-                            <div><button className="btn sectionFourButton">Order now</button></div>
+                            <div><Button className='btn sectionFourButton'  as={Link} to='/Merchandise'>Order Now</Button></div>
                         </div>                        
                     </div>
                     <div className="col-md">
@@ -76,7 +79,7 @@ function Home () {
                         <div className="padding">
                             <div><h1 className="h1">Just-right choice</h1></div>
                             <div className="paragraph">Our Egg White & Roasted Red Pepper Egg Bites are tasty, protein rich and 170 calories.</div>
-                            <div><button className="btn sectionFourButton">Order now</button></div>
+                            <div><Button className='btn sectionFourButton'  as={Link} to='/Menu'>Order Now</Button></div>
                         </div>                        
                     </div>
                     <div className="col-md">

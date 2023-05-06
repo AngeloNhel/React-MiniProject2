@@ -22,17 +22,19 @@
     font-size: large;
     font-weight: 600;
 }
-.btn {
-    border: 1px solid black;
+.btnRewards {
+    border: 1px solid #687e5f;
+    background-color: #687e5f;
     border-radius: 50px;
     padding-left: 20px;
     padding-right: 20px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: rgb(50, 49, 49);
 }
-.btn:hover {
-    border: 1px solid #687e5f;
-    background-color: #687e5f;
+.btnRewards:hover {
+    border: 1px solid black !important;
+    background-color: #687e5f !important;
+    color: black !important;
 }
 
 /* Thrid Section */ 

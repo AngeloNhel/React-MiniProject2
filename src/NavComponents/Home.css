@@ -25,6 +25,14 @@
     border: 1px solid #687e5f;
     background-color: #687e5f;
 }
+.eGiftButton {
+    background-color: #00000000 !important;
+}
+.eGiftButton:hover {
+    border: 1px solid #687e5f !important;
+    background-color: #687e5f !important;
+    color: #000000 !important;
+}
 
 
 /* SectionTwo */
@@ -36,12 +44,15 @@
 }
 
 .sectionTwoButton {
+    border: 1px solid rgb(23, 23, 23) !important;
+    background-color: #694b4b00;
     color: #000000;
     
 }
 .sectionTwoButton:hover {
     background-color: #003f29 !important;
     border: 1px solid #003f29 !important;
+    color: #000000 !important;
 }
 
 /* SetionThree */
@@ -52,12 +63,14 @@
     text-align: center;
 }
 .sectionThreeButton {
-    color: #000000;
+    background-color: #00000000;
+    color: #3d3d3d;
     
 }
 .sectionThreeButton:hover {
     background-color: #fa78b7 !important;
     border: 1px solid #fa78b7 !important;
+    color: #000000 !important;
 }
 
 /* SectionFour */
@@ -68,10 +81,12 @@
     text-align: center;
 }
 .sectionFourButton {
-    color: #000000;
+    background-color: #00000000;
+    color: #222222;
     
 }
 .sectionFourButton:hover {
     background-color: #f7dc9c !important;
     border: 1px solid #f7dc9c !important;
+    color: #000000 !important;
 }
