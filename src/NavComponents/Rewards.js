@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import React from "react";
+import Button from 'react-bootstrap/Button';
 import './Rewards.css';
 
 function Rewards () {
@@ -17,7 +19,7 @@ function Rewards () {
                     <div className="padding">
                         <div><h1 className="h1">FREE COFFEE <br/> IS A TAP AWAY</h1></div>
                         <div className="paragraph">Join now to start earning Rewards.</div>
-                        <div><button className="btn">Join now</button></div>
+                        <div>  <Button className='btn btnRewards'  as={Link} to='/JoinNow'>Join Now</Button></div>
                     </div>                
                 </div>
             </div>

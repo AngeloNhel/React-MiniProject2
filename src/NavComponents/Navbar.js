@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import React, { useState } from "react";
 import axios from "axios";
 import './Navbar.css';
@@ -15,7 +15,7 @@ function AppNavbar() {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-   
+    const navigate = useNavigate();
   
     const handleSubmit = async (event) => {
       event.preventDefault();
@@ -25,6 +25,8 @@ function AppNavbar() {
       });
       if (response.data.success) {
         alert("successfuly login")
+        navigate("/admin/dashboard")
+
       } else {
         alert("Invalid credentials. Please try again.");
       }

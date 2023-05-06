@@ -21,6 +21,7 @@ import TermofUse from './FooterComponents/termofUse';
 import SiteMap from './FooterComponents/SiteMap';
 import CookiesPreferences from './FooterComponents/CookiesPreferences';
 import JoinNow from './NavComponents/JoinNow';
+import Admin from './Admin/Admin';
 
 
 
@@ -49,6 +50,7 @@ function App() {
           <Route path="/SiteMap" element={<SiteMap/>}/>
           <Route path="/CookiesPreferences" element={<CookiesPreferences/>}/>
           <Route path="/JoinNow" element={<JoinNow/>}/>
+          <Route path="/admin/dashboard" element={<Admin/>}/>
           
       </Routes>
     <Footer/>  
