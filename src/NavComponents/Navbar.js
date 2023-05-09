@@ -53,8 +53,8 @@ function AppNavbar() {
                   <Nav.Link as={Link} to='/Rewards'>REWARDS</Nav.Link>
                   <Nav.Link data-bs-toggle="modal" data-bs-target="#shoppingCartModal">SHOPPING CART</Nav.Link>
                 </Nav>
-                <Button className='navSigninButtonStyle' data-bs-toggle="modal" data-bs-target="#loginModal">Sign in</Button>
-                <Button className='navJoinNowButtonStyle'  as={Link} to='/JoinNow'>Join Now</Button>
+                <Button className='navSigninButtonStyle' data-bs-toggle="modal" data-bs-target="#loginModal">Log in</Button>
+                <Button className='navJoinNowButtonStyle'  as={Link} to='/JoinNow'>Sign up</Button>
               </Navbar.Collapse>
             </Container>
         </Navbar>
@@ -67,7 +67,7 @@ function AppNavbar() {
                     <div>
                         <div className="card">
                             <div className="card-body">
-                                <div className="card-title" style={{"textAlign" : "center"}}>Sign in</div>
+                                <div className="card-title" style={{"textAlign" : "center"}}>Log in</div>
                                     <form onSubmit={handleSubmit}>    
                                         <div>    
                                             <label>Email:  </label>
@@ -84,11 +84,11 @@ function AppNavbar() {
                                             className="form-control"
                                             onChange={(event) => setPassword(event.target.value)}
                                             />
-                                            <button type="submit" class="btn btn-primary joinNowButton" >Sign in</button>
+                                            <button type="submit" class="btn btn-primary joinNowButton" >Log in</button>
                                         </div>    
                                     </form>            
                                 <div>
-                                    <Nav.Link className='JoinLink' as={Link} to='/JoinNow'> <label>Already have an account? </label> Join now</Nav.Link>
+                                    <Nav.Link className='JoinLink' as={Link} to='/JoinNow'> <label>Already have an account? </label> Sign up</Nav.Link>
                                 </div>
                             </div>
                         </div>

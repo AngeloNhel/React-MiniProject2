@@ -50,3 +50,89 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+/* Our Company Section */
+.h1OurCompany {
+    text-align: center;
+    padding: 50px;
+    background-color: beige;
+}
+/* Stories and News */
+.h1stories {
+    text-align: center;
+    padding: 50px;
+    background-color: beige;
+}
+.rowstories {
+    border: 1px solid rgb(213, 213, 213) !important;
+    padding: 5px;
+    border-radius: 10px;
+}
+.submitCard {
+    padding: 10px;
+}
+.storiescard {
+    padding: 10px;
+}
+.submitCard {
+    width: 30rem !important;
+}
+.getintouchinput{
+    margin-bottom: 6px;
+}
+.getintouchbtn {
+    margin-bottom: 7px;
+}
+
+/* customer service */
+
+.customersServiceRow {
+    margin-top: 95px;
+    background-color: blanchedalmond;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+.customersServiceH2 {
+    font-weight: bolder;
+    color: rgb(105, 105, 105);
+    font-size: 70px;
+}
+.customersServiceP {
+    color: rgb(87, 87, 87);
+    padding-bottom: 20px;
+}
+.customersServiceCol {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+.customerServiceBold {
+    font-weight: bold;
+}
+.customersServiceButton {
+    border: 1px solid rgb(105, 105, 105);
+    background: rgba(62, 62, 62, 0);
+    padding: 10px;
+    border-radius: 50px;
+    color: rgb(92, 92, 92);
+    font-size: large;
+    font-weight: bold;
+}
+
+.customersServiceBackgroundColor {
+    background-color: rgba(0, 0, 0, 0.411);
+    padding: 80px;
+    border-radius: 50px;
+}
+.customersServiceButton:hover {
+    background-color: gray;
+    border: 1px solid gray;
+    color: black;
+}
+.CustomersServiceTextarea{
+    height: 300px !important;
+}
