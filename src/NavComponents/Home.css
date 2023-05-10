@@ -90,3 +90,20 @@
     border: 1px solid #f7dc9c !important;
     color: #000000 !important;
 }
+
+/* Menu */
+
+.menuTextSize {
+    font-size: larger !important;
+}
+.menuSectionTitle {
+    margin-top: 95px;
+    font-weight: bolder;
+}
+ 
+/* admin */
+
+.adminButtons {
+    margin-left: 10px;
+    margin-right: 10px;
+}
