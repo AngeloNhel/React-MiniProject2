@@ -21,7 +21,7 @@ import TermofUse from './FooterComponents/termofUse';
 import SiteMap from './FooterComponents/SiteMap';
 import CookiesPreferences from './FooterComponents/CookiesPreferences';
 import JoinNow from './NavComponents/JoinNow';
-import Admin from './Admin/Admin';
+import Admin from './NavComponents/Admin';
 
 
 
